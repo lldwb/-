@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>网址大全</title>
+		<!-- <link href="css/表格测试.css" rel="stylesheet" type="text/css" /> -->
+		<style type="text/css">
+			/* body{background-image: url(img/inafe.jpg);} */
+
+			* {
+				/* 全部字体居中 */
+				text-align: center;
+				/* 元素居中对齐(自动调节与父元素的距离) */
+				margin: auto;
+				/* 垂直居中 */
+				/* vertical-align: bottom; */
+			}
+
+			/* =====标题样式===== */
+			h1 {
+				/* 字体粗细 */
+				font-weight: bold;
+				/* 字体大小 */
+				font-size: 55px;
+				/* 水平阴影 垂直阴影 模糊距离 阴影颜色 */
+				text-shadow: 5px 5px 10px #aaaa7f;
+			}
+
+			/* =====表格样式===== */
+			/* 表格设置 */
+			/* 测试 */
+			table {
+				/* 宽度 */
+				width: 30em;
+				/* 合并边框 */
+				border-collapse: collapse;
+				/* 边框 粗细 类型 颜色 */
+				border: 0.01em solid #55aa7f;
+			}
+
+			/* 单行表格 */
+			tr {
+				/* 高度 */
+				height: 3em;
+			}
+
+			/* 单元格 */
+			th {
+				/* 背景颜色 */
+				background-color: #ffffff;
+				/* 宽度 */
+				width: 6em;
+				/* 字体居右 */
+				text-align: right;
+				/* 边框 粗细 类型 颜色 */
+				border: 0.01em solid #55aa7f;
+			}
+
+			td {
+				/* 背景颜色 */
+				background-color: #ffffff;
+				/* 宽度 */
+				width: 6em;
+				/* 边框 粗细 类型 颜色 */
+				border: 0.01em solid #55aa7f;
+			}
+
+			td+td {
+				/* 边框 粗细 类型 颜色 */
+				border: 0.01em solid #55aa7f;
+			}
+
+			/* =====表格测试===== */
+			#table {
+				/* 上边框 粗细 类型 颜色 */
+				border-top: 0.01em solid #55aa7f;
+				/* 右边框 粗细 类型 颜色 */
+				border-radius: 0.01em solid #55aa7f;
+				/* 下边框 粗细 类型 颜色 */
+				border-bottom: 0.01em solid #55aa7f;
+				/* 左边框 粗细 类型 颜色 */
+				border-left: 0.01em solid #55aa7f;
+			}
+			#table tr th {
+				/* 上边框 粗细 类型 颜色 */
+				border-top: 0.01em solid #55aa7f;
+				/* 右边框 粗细 类型 颜色 */
+				border-radius: 0.01em solid #55aa7f;
+				/* 下边框 粗细 类型 颜色 */
+				border-bottom: 0.01em solid #55aa7f;
+				/* 左边框 粗细 类型 颜色 */
+				border-left: 0.01em solid #55aa7f;
+			}
+			#table tr td {
+				/* 上边框 粗细 类型 颜色 */
+				border-top: 0.01em solid #55aa7f;
+				/* 右边框 粗细 类型 颜色 */
+				border-radius: 0.01em solid #55aa7f;
+				/* 下边框 粗细 类型 颜色 */
+				border-bottom: 0.01em solid #55aa7f;
+				/* 左边框 粗细 类型 颜色 */
+				border-left: 0.01em solid #55aa7f;
+			}
+
+			#table tr td+td {
+				/* 上边框 粗细 类型 颜色 */
+				border-top: 0.01em solid #55aa7f;
+				/* 右边框 粗细 类型 颜色 */
+				border-radius: 0.01em solid #55aa7f;
+				/* 下边框 粗细 类型 颜色 */
+				border-bottom: 0.01em solid #55aa7f;
+				/* 左边框 粗细 类型 颜色 */
+				border-left: 0.01em solid #55aa7f;
+			}
+
+			/* =====超链接样式===== */
+			/*未被访问的链接*/
+			a:link {
+				/* 背景色 */
+				background-color: #ffffff;
+				/* 字体颜色 */
+				color: #000000;
+				/* 去下划线 */
+				text-decoration: none;
+			}
+
+			/* 已被访问的链接*/
+			a:visited {
+				/* 背景色 */
+				background-color: #ffffff;
+				/* 字体颜色 */
+				color: #000000;
+				/* 去下划线 */
+				text-decoration: none;
+			}
+
+			/*鼠标移动到链接上*/
+			a:hover {
+				/* 背景色 */
+				background-color: #ffffff;
+				/* 字体颜色 */
+				color: #ff0000;
+				/* 去下划线 */
+				text-decoration: underline;
+			}
+
+			/*正在被点击的链接*/
+			a:active {
+				/* 背景色 */
+				background-color: #ffffff;
+				/* 字体颜色 */
+				color: #ffaa00;
+				/* 去下划线 */
+				text-decoration: underline;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>网址大全</h1>
+		<table id="table">
+			<tr>
+				<th rowspan="2">常用网站:</th>
+				<td><a href="https://www.bilibili.com/" target="_blank">哔哩哔哩</a></td>
+				<td><a href="https://www.huorong.cn/" target="_blank">火绒安全</a></td>
+				<td><a href="https://www.baidu.com/" target="_blank">百度一下</a></td>
+				<td><a href="https://www.taobao.com/" target="_blank">淘宝官网</a></td>				
+			</tr>
+
+			<tr>
+				<td><a href="https://www.zhihu.com/signin?next=%2F" target="_blank">知乎</a></td>
+				<td><a href="https://store.steampowered.com/" target="_blank">steam</a></td>
+				<td><a href="http://pic.netbian.com/" target="_blank">彼岸图网</a></td>
+				<td><a href="https://user.qzone.qq.com/" target="_blank">QQ空间</a></td>
+			</tr>
+
+			<tr>
+				<th rowspan="2">搜索网站:</th>
+				<td><a href="https://www.baidu.com/" target="_blank">百度一下</a></td>
+				<td><a href="https://hao.360.com/" target="_blank">360搜索</a></td>
+				<td><a href="https://www.sogou.com/" target="_blank">搜狗搜索</a></td>
+				<td><a href="http://cn.bing.com/" target="_blank">微软Bing 搜索- 国内版</a></td>
+			</tr>
+
+			<tr>
+				<td><a href="https://www.hao123.com/" target="_blank">hao123</a></td>
+				<td><a href="https://www.google.cn/chrome/" target="_blank">谷歌浏览器</a></td>
+				<td><a href="https://encyclopedia.thefreedictionary.com/" target="_blank">维基百科</a></td>
+				<td><a href="https://www.microsoft.com/zh-cn/edge" target="_blank">Microsoft Edge 浏览器</a></td>
+			</tr>
+
+			<tr>
+				<th rowspan="1">邮箱网站:</th>
+				<td><a href="https://mail.qq.com/" target="_blank">QQ邮箱</a></td><!--3247187440@qq.com-->
+				<td><a href="https://outlook.live.com/owa/" target="_blank">Outlook邮箱</a></td><!--lldwb@outlook.com-->
+				<td><a href="https://mail.163.com" target="_blank">163邮箱</a></td><!--lldwb3247187440@163.com-->
+				<td><a href="https://login.yahoo.com/" target="_blank">雅虎邮箱</a></td>
+			</tr>
+
+			<tr>
+				<th rowspan="4">视频网站:</th>
+				<td><a href="https://www.bilibili.com/" target="_blank">哔哩哔哩</a></td>
+				<td><a href="https://www.iqiyi.com/" target="_blank">爱奇艺</a></td>
+				<td><a href="https://www.acfun.cn/" target="_blank">AcFun视频</a></td>
+				<td><a href="https://www.youku.com/" target="_blank">优酷</a></td>
+			</tr>
+
+			<tr>
+				<td><a href="https://v.qq.com/" target="_blank">腾讯视频</a></td>
+				<td><a href="https://www.56.com/" target="_blank">56视频</a></td>
+				<td><a href="https://tv.sohu.com/" target="_blank">搜狐视频</a></td>
+				<td><a href="https://www.mgtv.com/" target="_blank">芒果TV</a></td>
+			</tr>
+
+			<tr>
+				<td><a href="https://www.tudou.com/" target="_blank">土豆网</a></td>
+				<td><a href="http://v.baidu.com/" target="_blank">百度视频</a></td>
+				<td><a href="http://www.le.com/" target="_blank">乐视网</a></td>
+				<td><a href="http://v.hao123.baidu.com/" target="_blank">hao123影视</a></td>
+			</tr>
+			
+			<tr>
+				<td><a href="https://www.youtube.com/" target="_blank">YouTube(油管)</a></td>
+				<td><a href="" target="_blank"></a></td>
+				<td><a href="" target="_blank"></a></td>
+				<td><a href="" target="_blank"></a></td>
+			</tr>
+
+			<tr>
+				<th>常用应用:</th>
+				<td><a href="https://www.huorong.cn/" target="_blank">火绒安全</a></td>
+				<td><a href="https://dcloud.io/" target="_blank">HBuilderX</a></td>
+				<td><a href="https://www.wps.cn/" target="_blank">WPS官方网站</a></td>
+				<td><a href="https://pinyin.sogou.com/" target="_blank">搜狗输入法</a></td>
+			</tr>
+
+			<tr>
+				<th>杀毒软件:</th>
+				<td><a href="https://www.huorong.cn/" target="_blank">火绒安全</a></td>
+				<td><a href="https://guanjia.qq.com/" target="_blank">腾讯电脑管家</a></td>
+				<td><a href="https://weishi.360.cn/" target="_blank">360安全卫士</a></td>
+				<td><a href="http://www.ijinshan.com/" target="_blank">金山毒霸</a></td>
+			</tr>
+
+			<tr>
+				<th>网购网站:</th>
+				<td><a href="https://www.taobao.com/" target="_blank">淘宝官网</a></td>
+				<td><a href="https://www.suning.com/" target="_blank">苏宁易购</a></td>
+				<td><a href="https://www.jd.com/" target="_blank">京东</a></td>
+				<td><a href="https://www.tmall.com/" target="_blank">天猫商城</a></td>
+			</tr>
+
+			<tr>
+				<th>音乐网站:</th>
+				<td><a href="https://www.kugou.com/" target="_blank">酷狗音乐</a></td>
+				<td><a href="https://music.163.com/" target="_blank">网易云音乐</a></td>
+				<td><a href="https://y.qq.com/" target="_blank">QQ音乐</a></td>
+				<td><a href="http://www.kuwo.cn/" target="_blank">酷我音乐</a></td>
+			</tr>
+
+			<tr>
+				<th rowspan="2">导航地图:</th>
+				<td><a href="https://www.amap.com/" target="_blank">高德地图</a></td>
+				<td><a href="https://map.baidu.com/" target="_blank">百度地图</a></td>
+				<td><a href="https://www.qunar.com/" target="_blank">去哪儿网</a></td>
+				<td><a href="https://map.qq.com/" target="_blank">腾讯地图</a></td>
+			</tr>
+
+			<tr>
+				<td><a href="https://map.sogou.com/" target="_blank">搜狗地图</a></td>
+				<td><a href="http://www.google.cn/" target="_blank">谷歌地图 - Google</a></td>
+				<td><a href="" target="_blank"></a></td>
+				<td><a href="" target="_blank"></a></td>
+			</tr>
+
+			<tr>
+				<th rowspan="1">网络硬盘:</th>
+				<td><a href="https://pan.baidu.com/" target="_blank">百度网盘</a></td>
+				<td><a href="https://www.weiyun.com/" target="_blank">腾讯微云</a></td>
+				<td><a href="https://www.jianguoyun.com/" target="_blank">坚果云</a></td>
+				<td><a href="" target="_blank"></a></td>
+			</tr>
+
+			<tr>
+				<th rowspan="2">腾讯网站:</th>
+				<td><a href="https://mail.qq.com/" target="_blank">QQ邮箱</a></td>
+				<td><a href="https://user.qzone.qq.com/" target="_blank">QQ空间</a></td>
+				<td><a href="https://im.qq.com/" target="_blank">QQ官网</a></td>
+				<td><a href="https://aq.qq.com/cn2/index" target="_blank">QQ安全中心</a></td>
+			</tr>
+
+			<tr>
+				<td><a href="https://connect.qq.com/index.html" target="_blank">QQ互联</a></td>
+				<td><a href="https://weixin.qq.com/" target="_blank">微信</a></td>
+				<td><a href="https://www.qq.com/" target="_blank">腾讯官网</a></td>
+				<td><a href="https://www.weiyun.com/" target="_blank">腾讯微云</a></td>
+
+			<tr>
+				<th rowspan="2">学习网站:</th>
+				<td><a href="https://www.runoob.com/" target="_blank">菜鸟教程</a></td>
+				<td><a href="https://www.runoob.com/html/html-examples.html" target="_blank">HTML 实例</a></td>
+				<td><a href="https://www.runoob.com/css/css-examples.html" target="_blank">CSS 实例</a></td>
+				<td><a href="https://www.runoob.com/csharp/csharp-tutorial.html" target="_blank">C#实例</a></td>
+			</tr>
+		
+			<tr>
+				<td><a href="https://xiumi.us/#/" target="_blank">秀米XIUMI官方</a></td>
+				<td><a href="https://www.csdn.net/" target="_blank">csdn</a></td>
+			    <td><a href="" target="_blank"></a></td>
+				<td><a href="" target="_blank"></a></td>
+			</tr>
+
+			<tr>
+				<th rowspan="2">编程论坛:</th>
+			    <td><a href="https://bbs.bccn.net/" target="_blank">编程社区</a></td>
+				<td><a href="https://www.bccn.net/" target="_blank">编程中国</a></td>
+			    <td><a href="https://www.c0ks.com/" target="_blank">从零开始</a></td>
+				<td><a href="https://www.fkgzs.com/" target="_blank">疯狂编程论坛</a></td>
+			</tr>
+
+			<tr>
+			    <td><a href="http://www.ruaiwu.com/" target="_blank">星光编程论坛</a></td>
+				<td><a href="http://www.pfan.cn/" target="_blank">编程爱好者</a></td>
+			    <td><a href="" target="_blank"></a></td>
+				<td><a href="" target="_blank"></a></td>
+			</tr>
+
+			<tr>
+				<th rowspan="1">汉字学习:</th>
+				<td><a href="http://www.zggfhzsx.com/" target="_blank">中国规范汉字书写网</a></td>
+			    <td><a href="https://sssfsssf.com/" target="_blank">中国青年书法网</a></td>
+			    <td><a href="https://www.shicimingju.com/" target="_blank">诗词名言网</a></td>
+				<td><a href="" target="_blank"></a></td>
+			</tr>
+
+			<tr>
+				<th rowspan="2">游戏网站:</th>
+				<td><a href="https://store.steampowered.com/" target="_blank">steam</a></td>
+				<td><a href="https://www.cdprojekt.com/pl/" target="_blank">波兰蠢驴</a></td><!-- CD Projekt S.A.(波兰蠢驴) -->
+				<td><a href="https://www.ubisoft.com.cn/" target="_blank">育碧</a></td>
+				<td><a href="https://www.nintendo.com/" target="_blank">任天堂</a></td>
+			</tr>
+
+			<tr>
+				<td><a href="https://www.sony.com.cn/" target="_blank">索尼</a></td>
+				<td><a href="http://www.cubejoy.com/index.html" target="_blank">方块游戏</a></td>
+				<td><a href="https://www.taptap.com/" target="_blank">TapTap</a></td>
+				<td><a href="https://www.rockstargames.com/" target="_blank">R星</a></td>
+			</tr>
+
+			<tr>
+				<th>小游戏网站:</th>
+				<td><a href="http://www.4399.com/" target="_blank">4399</a></td>
+				<td><a href="http://www.7k7k.com/" target="_blank">7k7k</a></td>
+				<td><a href="" target="_blank"></a></td>
+				<td><a href="" target="_blank"></a></td>
+			</tr>
+
+			<tr>
+				<th>我的世界:</th>
+				<td><a href="https://www.minecraft.net/zh-hans/" target="_blank">官方网站</a></td>
+				<td><a href="https://mc.163.com/" target="_blank">网易代理</a></td>
+				<td><a href="http://www.minecraftxz.com/" target="_blank">Minecraft中文下载站</a></td>
+				<td><a href="http://news.4399.com/wdshijie/#search3" target="_blank">4399</a></td>
+			</tr>
+
+			<tr>
+				<th rowspan="2">壁纸网站:</th>
+				<td><a href="http://www.netbian.com/" target="_blank">彼岸桌面</a></td>
+				<td><a href="https://588ku.com/" target="_blank">千库网</a></td>
+				<td><a href="http://www.birdpaper.cn/" target="_blank">小鸟壁纸</a></td>
+				<td><a href="https://www.ivsky.com/bizhi/wodeshijie_t15921/" target="_blank">天堂图片网</a></td>
+			</tr>
+
+			<tr>
+				<td><a href="http://pic.netbian.com/" target="_blank">彼岸图网</a></td>
+				<td><a href="https://unsplash.com/" target="_blank">Unsplash</a></td>
+				<td><a href="https://pixabay.com/" target="_blank">Pixabay</a></td>
+				<td><a href="" target="_blank"></a></td>
+			</tr>
+
+			<tr>
+				<th rowspan="3">电脑相关:</th>
+				<td><a href="https://www.microsoftstore.com.cn/" target="_blank">微软官方商城</a></td>
+				<td><a href="https://www.kaspersky.com.cn/" target="_blank">卡巴斯基</a></td>
+				<td><a href="http://www1.ruan123.cn" target="_blank">麦豆商城</a></td>
+				<td><a href="https://windows.rfoymw.com/onkey.html" target="_blank">纯净系统下载</a></td>
+			</tr>
+
+			<tr>
+				<td><a href="https://u.dafanqie.net/" target="_blank">大番茄启动工具</a></td>
+				<td><a href="http://www.downza.cn/soft/spcl-78-5.html" target="_blank">下载之家</a></td>
+				<td><a href="http://www.pcgeshi.com/" target="_blank">格式工厂</a></td>
+				<td><a href="https://www.pconline.com.cn/" target="_blank">太平洋电脑网</a></td>
+			</tr>
+
+			<tr>
+				<td><a href="http://www.dafanqie.net/" target="_blank">大番茄装机</a></td>
+				<td><a href="http://www.xitongzhijia.cc/?fav20161023" target="_blank">系统之家</a></td>
+				<td><a href="http://www.zhutizhijia.net/" target="_blank">主题之家</a></td>
+				<td><a href="http://www.drivergenius.com/" target="_blank">驱动精灵</a></td>
+			</tr>
+
+			<tr>
+				<th rowspan="2">应用网站:</th>
+				<td><a href="https://weibo.com/login.php" target="_blank">新浪微博</a></td>
+				<td><a href="https://www.updatestar.com/" target="_blank">updatestar</a></td>
+				<td><a href="https://www.nasa.gov/multimedia/nasatv/index.html#public" target="_blank">NASA</a></td>
+				<td><a href="https://github.com/" target="_blank">Github</a></td><!--https://github.com/peng-zhihui/PocketLCD-->
+			</tr>
+
+			<tr>
+				<td><a href="https://www.zhihu.com/signin?next=%2F" target="_blank">知乎</a></td>
+				<td><a href="https://www.baidu.com/" target="_blank">Facebook(脸书)</a></td>
+				<td><a href="https://www.baidu.com/" target="_blank">Twitter(推特)</a></td>
+				<td><a href="" target="_blank"></a></td>
+			</tr>
+
+			<tr>
+				<th rowspan="1">翻译网站:</th>
+				<td><a href="https://translate.google.cn/" target="_blank">谷歌翻译</a></td>
+				<td><a href="https://fanyi.baidu.com/" target="_blank">百度翻译</a></td>
+				<td><a href="http://fanyi.youdao.com/" target="_blank">有道翻译</a></td>
+				<td><a href="http://www.iciba.com/" target="_blank">金山翻译</a></td>
+			</tr>
+
+			<tr>
+				<th rowspan="1">快递相关:</th>
+				<td><a href="https://www.kuaidi100.com/?from=openv" target="_blank">快递100</a></td>
+				<td><a href="https://www.cainiao.com/guoguo.html?hmsr=baidupc&hmpl=&hmcu=&hmkw=&hmci=" target="_blank">菜鸟裹裹</a></td>
+				<td><a href="http://www.ems.com.cn/" target="_blank">邮政快递</a></td>
+				<td><a href="https://www.zto.com/" target="_blank">中通快递</a></td>
+			</tr>
+
+			<tr>
+				<th>云电脑:</th>
+				<td><a href="https://www.dalongyun.com/" target="_blank">达龙云电脑</a></td>
+				<td><a href="https://www.ji-cloud.cn/" target="_blank">极云普惠云电脑</a></td>
+				<td><a href="https://www.qingjiaocloud.com/" target="_blank">青椒云</a></td>
+				<td><a href="https://www.honpc.com/" target="_blank">弘电脑</a></td>
+			</tr>
+
+			<tr>
+				<th>云电脑无限制破解版:</th>
+				<td><a href="http://www.downxia.com/downinfo/213484.html" target="_blank">云电脑无限时长破解版 V5.0.1.71 安卓版</a></td>
+				<td><a href="http://www.downxia.com/downinfo/265452.html" target="_blank">吾爱破解版 V6.2.2.21</a></td>
+				<td><a href="http://www.2265.com/soft/146995.html" target="_blank">安卓吾爱v5.0.1.70破解版</a></td>
+				<td><a href="" target="_blank"></a></td>
+			</tr>
+
+			<tr>
+				<th rowspan="4">经典官网:</th>
+				<td><a href="http://www.people.com.cn/" target="_blank">人民网</a></td>
+				<td><a href="http://www.xinhuanet.com/" target="_blank">新华网</a></td>
+				<td><a href="https://www.cctv.com/" target="_blank">央视网</a></td>
+				<td><a href="http://www.china.com.cn/" target="_blank">中国网</a></td>
+			</tr>
+
+			<tr>
+				<td><a href="http://www.cri.cn/" target="_blank">国际在线</a></td>
+				<td><a href="http://cn.chinadaily.com.cn/" target="_blank">中国日报</a></td>
+				<td><a href="http://www.ce.cn/" target="_blank">中经网</a></td>
+				<td><a href="http://www.gmw.cn/" target="_blank">光明网</a></td>
+			</tr>
+
+			<tr>
+				<td><a href="http://www.cnr.cn/" target="_blank">央广网</a></td>
+				<td><a href="http://www.youth.cn/" target="_blank">中青网</a></td>
+				<td><a href="http://www.81.cn/" target="_blank">中国军网</a></td>
+				<td><a href="http://www.cac.gov.cn/" target="_blank">网信网</a></td>
+			</tr>
+
+			<tr>
+				<td><a href="https://www.guancha.cn/" target="_blank">观察者网</a></td>
+				<td><a href="http://scp-wiki-cn.wikidot.com/" target="_blank">SCP中文版</a></td>
+				<td><a href="https://www.wikidot.com/" target="_blank">wikidot</a></td>
+				<td><a href="http://www.scpwiki.com/" target="_blank">SCP英文版</a></td>
+			</tr>
+			
+			<tr>
+				<th>安全:</th>
+				<td><a href="http://www.shdf.gov.cn/shdf/channels/740.html" target="_blank">扫黄打非</a></td>
+				<td><a href="https://www.qq.com/jubaoxuzhi.htm" target="_blank">网络举报监督</a></td>
+				<td><a href="https://110.qq.com/" target="_blank">腾讯账号安全</a></td>
+				<td><a href="https://www.12377.cn/index.html" target="_blank">违法和不良信息举报中心</a></td>
+			</tr>
+		<!-- 
+			<tr>
+				<th></th>
+				<td><a href="" target="_blank"></a></td>
+				<td><a href="" target="_blank"></a></td>
+				<td><a href="" target="_blank"></a></td>
+				<td><a href="" target="_blank"></a></td>
+			</tr> -->
+
+		</table>
+        <br />
+        <p><a href="" target="_blank">安然的尾巴</a></p>
+		<!-- <iframe width="100%" height="1600" src="https://map.baidu.com/"></iframe> -->
+	</body>
+</html>
+<!-- 
+单元格跨4列
+<tr><td colspan="4">腾讯</td></tr> -->
+
+<!-- 
+单元格跨两行
+<th rowspan="2">Telephone:</th> -->
+<!-- 安然的尾巴 -->
